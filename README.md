@@ -19,6 +19,7 @@ So one day I have decided to beautify the folder by classifying and moving all t
 
 -   [Idea](#idea)
 -   [dummyMoviesGenerator.py](#dummyMoviesGenerator.py) 
+-   [API](#api)
 
 ## Idea
 
@@ -81,3 +82,5 @@ def generate_dummy_movies():
 generate_dummy_movies()
 
 ```
+
+## API
