@@ -8,7 +8,8 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 :star: Star me on GitHub — just for fun and motivation :grinning:
-I have A LOT OF movies on my hard drive which desperately need to be put into folders.
+
+Do you have a LOAD of movies on your hard drive ? I have :laughing: I am huge fan of movies from 90s, 80s, 70s, 60, ... up to the old school black and white ones. Unfortunately, they were scattered around `Movie` folder on my Seagate external hard drive.  
 
 The task at hand is to find a good API that can classify the movies by genre.
 
