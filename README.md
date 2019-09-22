@@ -1,4 +1,4 @@
-<img src='./media/logo.png' alt='Movie Prettifier Logo' title='Movie Prettifier'/>
+<img src='./media/logo.png' alt='Movie Prettifier Logo' title='Movie Prettifier' height='200'/>
 
 # Movies Folder Prettifier
 
