@@ -1,4 +1,7 @@
 # Movies Folder Prettifier
+
+<img src='./media/logo.png' alt='Movie Prettifier Logo' title='Movie Prettifier' align='right' height='60'/>
+
 [![Python 3.6](https://img.shields.io/badge/python-3.6-blue.svg)](https://www.python.org/downloads/release/python-360/)
 ![GitHub last commit](https://img.shields.io/github/last-commit/Snowfighter/MoviesFolderPrettifier)
 ![Contributions welcome](https://img.shields.io/badge/contributions-welcome-orange.svg)
