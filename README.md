@@ -60,6 +60,11 @@ movies_db = {
              'Doctor Strange', 'Dead Man', 'Wonder Woman', 'Thor: Ragnarok'],
 }
 ```
+
+In the `generate_dummy_movies()` function I populate `movies_local_list` with 4 random titles of every genre from `movies_db` using `choice()` function.
+
+After that for every item in the `movies_local_list` I append '.mkv' extension and then create this file by opening it and then closing. 
+
 ```python
 def generate_dummy_movies():
     movies_local_list = []
