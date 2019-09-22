@@ -18,10 +18,12 @@ So one day I have decided to beautify the folder by classifying and moving all t
 ## Table of contents
 
 -   [Idea](#idea)
-
-
-The task at hand is to find a good API that can classify the movies by genre.
-
-After that each folder is going to have the name of unique genre (Western, Horror, Thriller ...). 
+-   [dummyMoviesGenerator.py](#dummyMoviesGenerator.py) 
 
 ## Idea
+
+The idea behind this little project was to find API that is going to determine based on the title of the movie which genre it belongs to. If the folder with the genre name exists,the script will put it into it, otherwise it will create the needed folder and move the video file. 
+
+This was a little outline of what I wanted to do, so let's now look at the implementation.
+
+## dummyMoviesGenerator.py
