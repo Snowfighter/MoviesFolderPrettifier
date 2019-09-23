@@ -92,3 +92,37 @@ generate_dummy_movies()
 My choice for a movie database obviously fell on [IMDb](https://www.imdb.com), but they had no native api :disappointed: So I found [The Movie Database (TMDb)](https://www.themoviedb.org), which has an [API](https://developers.themoviedb.org/3/getting-started/introduction), that accommodates all my needs. I can send a GET seach request based on the name of the movie file and get all the information about the flick including the genre information.
 
 ## api_request.py
+
+So I have written a function that acceptes a title and adds it to the `payload` object as a query. I my case `payload` which I send via GET request to the API. As a response I get a json object, where from results I get the first movie (should be our title) and extract its `genre_ids`.
+
+```python
+import requests
+
+url = 'https://api.themoviedb.org/3/search/movie'
+
+payload = {
+    'api_key': '...',
+    'language': 'en-US',
+    'page': 1,
+    'include_adult': 'true',
+}
+
+def movie_genre_finder(title):
+
+    payload['query'] = title
+    r = requests.get(url, params=payload)
+    json_res = r.json()
+ 
+    if json_res['results']:
+        genre_id = json_res['results'][0]['genre_ids']
+        if 878 in genre_id:
+            return "Science Fiction"
+        elif 14 in genre_id:
+            return "Fantasy"
+        else:
+            for item in genres:
+                if item['id'] == genre_id[0]:
+                    return item['name']
+    else:
+        return '!MOV'
+```
