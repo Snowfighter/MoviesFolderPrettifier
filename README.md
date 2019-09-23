@@ -87,3 +87,5 @@ generate_dummy_movies()
 </a>
 
 ## API
+
+My choice for a movie database obviously fell on [IMDb](https://www.imdb.com), but they had no native api :disappointed: So I found [The Movie Database (TMDb)](https://www.themoviedb.org), which has an API, that accomadates all my needs. 
