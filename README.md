@@ -83,7 +83,7 @@ generate_dummy_movies()
 
 ```
 <a href='https://www.themoviedb.org'>
-    <img src='./media/themoviedb_logo.png' alt='The Movie Database' title='The Movie Database (TMDb)' align='right' height='50'/>
+    <img src='./media/themoviedb_logo.png' alt='The Movie Database' title='The Movie Database (TMDb)' align='right' height='80'/>
 </a>
 
 ## API
