@@ -221,7 +221,9 @@ In the end the function returns a name from `genres` list or `!MOV`, which stand
 
 Before diving into the main [app.py](./app.py) file, I'll crarify, that in my movie collection I have mostly `.m4v` and `.mkv` files with the names like this: `Christopher Robin (1080p HD)` or `Aquaman.WEB-DL.1080p`. So in order to make a clear nice query to the API, I need to do some cleaning up with the file name.
 
-Looking
+Looking at [app.py](./app.py), I have defined a `FOLDERPATH` variable for a path to the folder with movies. Then for every `file` in the folder I first print file for error checking and testing, after that I use `try` `except` scenario for the issue I have described before about two types of names my movies have.
+
+In the `try` case I check if the file is a `.DS_Store` (*could not get read of it*) or a folder. Then I get the part of the file before the opening bracket as in this example `Christopher Robin (1080p HD)` and get the genre by using `movie_genre_finder()` function defined earlier. 
 
 ```python
 import os
