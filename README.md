@@ -1,7 +1,5 @@
 <img src='./media/logo.png' alt='Movie Prettifier Logo' title='Movie Prettifier' height='200'/>
 
-<img src='./media/themoviedb_logo.png' alt='The Movie Database' title='The Movie Database (TMDb)' align='right' height='100'/>
-
 # Movies Folder Prettifier
 
 [![Python 3.6](https://img.shields.io/badge/python-3.6-blue.svg)](https://www.python.org/downloads/release/python-360/)
@@ -84,6 +82,6 @@ def generate_dummy_movies():
 generate_dummy_movies()
 
 ```
-<img src='./media/themoviedb_logo.png' alt='The Movie Database' title='The Movie Database (TMDb)' align='left' height='50'/>
+<img src='./media/themoviedb_logo.png' alt='The Movie Database' title='The Movie Database (TMDb)' align='right' height='50'/>
 
 ## API
