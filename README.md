@@ -20,6 +20,7 @@ So one day I have decided to beautify the folder by classifying and moving all t
 -   [Idea](#idea)
 -   [dummyMoviesGenerator.py](#dummyMoviesGenerator.py) 
 -   [API](#api)
+-   [api_request.py](#api_request.py)
 
 ## Idea
 
@@ -88,4 +89,6 @@ generate_dummy_movies()
 
 ## API
 
-My choice for a movie database obviously fell on [IMDb](https://www.imdb.com), but they had no native api :disappointed: So I found [The Movie Database (TMDb)](https://www.themoviedb.org), which has an [API](https://developers.themoviedb.org/3/getting-started/introduction), that accommodates all my needs. 
+My choice for a movie database obviously fell on [IMDb](https://www.imdb.com), but they had no native api :disappointed: So I found [The Movie Database (TMDb)](https://www.themoviedb.org), which has an [API](https://developers.themoviedb.org/3/getting-started/introduction), that accommodates all my needs. I can send a GET seach request based on the name of the movie file and get all the information about the flick including the genre information.
+
+## api_request.py
