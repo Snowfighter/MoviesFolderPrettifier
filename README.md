@@ -15,7 +15,6 @@ I am huge fan of movies from 90s, 80s, 70s, 60, ... up to the old school black a
 
 So one day I have decided to beautify the folder by classifying and moving all the movies into the right **Genre** folders. Being a lazy person I have decide to use **Python** to do all the hard work :blush:
 
-============
 ![](./media/movies_genre_sorting.gif)
 ==================================================================
 ![](./media/console_log.gif)
