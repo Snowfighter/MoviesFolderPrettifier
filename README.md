@@ -211,3 +211,7 @@ genres = [
     }
   ]
 ```
+
+Returning back to `movie_genre_finder(title)`, I have made an if statement that first checks if the `genre_id` has some particular ids (for SciFi and Fantasy) that I want explicitly to stand out. It was done because a lot of movies have there first genre id in the list equal to 28 (Action), and more specific ones come after it. 
+
+In the end the function returns a name from `genres` list or `!MOV`, which stands for **NOT A MOVIE**
