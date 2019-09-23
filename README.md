@@ -223,7 +223,11 @@ Before diving into the main [app.py](./app.py) file, I'll crarify, that in my mo
 
 Looking at [app.py](./app.py), I have defined a `FOLDERPATH` variable for a path to the folder with movies. Then for every `file` in the folder I first print file for error checking and testing, after that I use `try` `except` scenario for the issue I have described before about two types of names my movies have.
 
-In the `try` case I check if the file is a `.DS_Store` (*could not get read of it*) or a folder. Then I get the part of the file before the opening bracket as in this example `Christopher Robin (1080p HD)` and get the genre by using `movie_genre_finder()` function defined earlier. 
+In the `try` case I check if the file is a `.DS_Store` (*could not get read of it*) or a folder. Then I get the part of the file before the opening bracket as in this example `Christopher Robin (1080p HD)` and get the `genre` by using `movie_genre_finder()` function defined earlier. 
+
+`genre` is checked for **NOT A MOVIE** case if the folder of such a name already does not exists. If not it is created. Then the file is inserted into the folder. 
+
+The `except IndexError` is the same in all the statements, but it catches the case when the movie file has a name like `Aquaman.WEB-DL.1080p`. 
 
 ```python
 import os
