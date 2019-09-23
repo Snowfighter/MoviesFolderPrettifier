@@ -22,6 +22,7 @@ So one day I have decided to beautify the folder by classifying and moving all t
 -   [API](#api)
 -   [api_request.py](#api_request.py)
 -   [app.py](#app.py)
+-   [Credits](#credits)
 
 ## Idea
 
@@ -264,3 +265,6 @@ def main():
 if __name__ == "__main__":
     main()
 ```
+
+## Credits 
+<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"             title="Flaticon">www.flaticon.com</a></div>
