@@ -82,5 +82,6 @@ def generate_dummy_movies():
 generate_dummy_movies()
 
 ```
+<img src='./media/themoviedb_logo.png' alt='The Movie Database' title='The Movie Database (TMDb)' align='right'/>
 
 ## API
