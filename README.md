@@ -21,6 +21,7 @@ So one day I have decided to beautify the folder by classifying and moving all t
 -   [dummyMoviesGenerator.py](#dummyMoviesGenerator.py) 
 -   [API](#api)
 -   [api_request.py](#api_request.py)
+-   [app.py](#app.py)
 
 ## Idea
 
@@ -214,4 +215,46 @@ genres = [
 
 Returning back to `movie_genre_finder(title)`, I have made an if statement that first checks if the `genre_id` has some particular ids (for SciFi and Fantasy) that I want explicitly to stand out. It was done because a lot of movies have there first genre id in the list equal to 28 (Action), and more specific ones come after it. 
 
-In the end the function returns a name from `genres` list or `!MOV`, which stands for **NOT A MOVIE**
+In the end the function returns a name from `genres` list or `!MOV`, which stands for **NOT A MOVIE**.
+
+## app.py
+
+Before diving into the main [app.py](./app.py) file, I'll crarify, that in my movie collection I have mostly `.m4v` and `.mkv` files with the names like this: `Christopher Robin (1080p HD)` or `Aquaman.WEB-DL.1080p`. So in order to make a clear nice query to the API, I need to do some cleaning up with the file name.
+
+Looking
+
+```python
+import os
+import shutil
+from api_requests import movie_genre_finder
+
+FOLDERPATH = '...'
+
+def main():
+    for file in os.listdir(FOLDERPATH):
+        print(file)
+        try:
+            if not file == '.DS_Store' and not os.path.isdir(FOLDERPATH + file):
+                genre = movie_genre_finder(file.split('(')[-2])
+                if (genre != '!MOV') and (not os.path.exists(os.path.join(FOLDERPATH, genre))):
+                    os.makedirs(os.path.join(FOLDERPATH, genre))
+
+                if os.path.exists(os.path.join(FOLDERPATH, genre)):
+                    file_path = FOLDERPATH + file
+                    print(file + '->' + genre)
+                    shutil.move(file_path, os.path.join(FOLDERPATH, genre))
+        except IndexError:
+            if not file == '.DS_Store' and not os.path.isdir(FOLDERPATH + file):
+                genre = movie_genre_finder(file.split('.')[0])
+                if (genre != '!MOV') and (not os.path.exists(os.path.join(FOLDERPATH, genre))):
+                    os.makedirs(os.path.join(FOLDERPATH, genre))
+
+                if os.path.exists(os.path.join(FOLDERPATH, genre)):
+                    file_path = FOLDERPATH + file
+                    print(file + '->' + genre)
+                    shutil.move(file_path, os.path.join(FOLDERPATH, genre))
+
+
+if __name__ == "__main__":
+    main()
+```
