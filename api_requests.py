@@ -3,7 +3,7 @@ import requests
 url = 'https://api.themoviedb.org/3/search/movie'
 
 payload = {
-    'api_key': '',
+    'api_key': '...',
     'language': 'en-US',
     'page': 1,
     'include_adult': 'true',
